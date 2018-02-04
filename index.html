@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reis Haleem</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        <link  href="https://unpkg.com/nanogallery2@2.0.0/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="./css/app.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src='./scripts/jquery.easing.1.3.js'></script>
+        <script type="text/javascript" src="https://unpkg.com/nanogallery2@2.0.0/dist/jquery.nanogallery2.min.js"></script>
+        <script type="text/javascript" src='./scripts/scrolling.js'></script>
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        <nav class='navbar navbar-default navbar-fixed-top navbar-transparent'>
+            <div class='container-fluid'>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                </button>
+                <div class='navbar-header'>
+                    <a class='navbar-brand' href='./index.html'>
+                        REIS HALEEM
+                    </a>
+                </div>
+                <div class='collapse navbar-collapse' id="myNavbar">
+                    <ul class='nav navbar-nav navbar-right nav-transparent'>
+                        <li><a href='#top'>HOME</a></li>
+                        <li><a href='#about'>ABOUT</a></li>
+                        <li><a href='#proj'>PROJECTS</a></li>
+                        <li><a href='#cont'>CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+
+        <div class='container-fluid'>
+            <!-- Home page -->
+            <div class='home' id='top'>
+                <div class='row title-row'>
+                    <div class='fill-screen'>
+                        <figure></figure>
+                        <figure></figure>
+                        <figure></figure>
+                        <figure></figure>
+                        <figure></figure>
+                        <!-- Logo made at logomakr.com -->
+                        <img src='./images/reis.png' class='img-responsive title-image' alt='logo'>
+                        <div class='down-arrow'>
+                            <a href='#about' class='btn'>
+                                <i class='fa fa-arrow-circle-down fa-4x animated infinite pulse'></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End home -->
+
+
+            <!-- About me section -->
+            <div class='aboutme' id='about'>
+                <div class='row text-banner'>
+                    <h1>WELCOME</h1>
+                </div>
+                <div class='row'>
+                    <div class='col-sm-4'>
+                        <img src='./images/me.jpg' class='img-responsive myPic' alt='Reis'>
+                        <div class='socialMedia'>
+                            <ul class="text-center">
+                                <li>
+                                    <div class="icon">
+                                        <a href="https://instagram.com/reishaleem" target="_blank"><i class="fa fa-instagram fa-3x"></i></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <a href="https://twitter.com/reis_haleem" target="_blank"><i class="fa fa-twitter fa-3x"></i></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <a href="https://github.com/reishaleem" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class='col-sm-7'>
+                        <p style="font-size: 20px;">
+                            My name is Reis. I am a Sophomore studying Computer Science at
+                            <a href="https://osu.edu" target="_blank">The Ohio State University</a>.
+                            I love coding, and I am always trying to learn more about programming languages,
+                            concepts, and techniques. One of my favorite things about coding is how much fun
+                            the learning process can be. The language I am most familiar with is Java, but my
+                            biggest interests involve learning python as well as front end development.
+                            <br>
+                            <br>
+                            Outside of coding, the activities I do the most include hanging out with friends,
+                            watching soccer, and watching basketball! I am also involved in intramural sports at
+                            Ohio State. Inside the classroom, I am a Teaching Assistant involved in helping students
+                            learn the fundamentals of engineering as well as the Java programming language. Helping
+                            others learn is a passion of mine, and I love all of the great relationships and connections
+                            I am able to make through this experience.
+                            <br>
+                            <br>
+                            As alluded to above, I am a Teaching Assistant for Software 1 (<a href="http://web.cse.ohio-state.edu/software/web/index.html" target="_blank">CSE 2221</a>).
+                            My Office Hours are on Tuesdays, from 12:30pm-1:30pm and Thursdays from
+                            5:45pm-6:45pm in Caldwell Labs 420.
+                            <br>
+                            <br>
+                            You can find my resum&eacute; <a href="resume.pdf" target="_blank">here</a>. <!-- needs to be updated -->
+                        </p>
+                    </div>
+                    <div class='col-sm-1'>
+                    </div>
+                </div>
+            </div>
+            <!-- End About Me -->
+
+            <!-- Start projects -->
+            <div class='projects' id=proj>
+                <div class='row text-banner' style='margin-top: 30px'>
+                    <h1>PROJECTS</h1>
+                </div>
+                <div class='row'>
+                    <div id="my_nanogallery2" data-nanogallery2='{"thumbnailHoverEffect2": "scale120", "thumbnailLabel": {"displayDescription": true}}'>
+                        <!-- Java projects -->
+                        <a href='' data-ngkind='album' data-ngid='1' data-ngthumb='' data-ngdesc='Skill Level: level'>Coding Language</a>
+                        <a href='' data-ngid='10' data-ngalbumid='1' data-ngthumb=''>Image 1 / album A</a>
+                        <a href='' data-ngid='11' data-ngalbumid='1' data-ngthumb=''>Image 2 / album A</a>
+
+                        <!-- Web dev projects -->
+                        <a href='' data-ngkind='album' data-ngid='2' data-ngthumb='' data-ngdesc='Skill Level: level'>Coding Language</a>
+                        <a href='' data-ngid='20' data-ngalbumid='2' data-ngthumb=''>Image 1</a>
+                        <a href='' data-ngid='21' data-ngalbumid='2' data-ngthumb=''>Image 2</a>
+                        <a href='' data-ngid='22' data-ngalbumid='2' data-ngthumb=''>Image 3</a>
+
+                        <!-- Python projects -->
+                        <a href='' data-ngkind='album' data-ngid='3' data-ngthumb='./images/projects/webdev.svg' data-ngdesc='Skill Level: Beginner'>Web Development</a>
+                        <a href='./images/projects/personalwebsite.PNG' data-ngid='23' data-ngalbumid='3' data-ngthumb='./images/projects/htmlLogo.png'>Personal Website</a>
+                        <a href='' data-ngid='24' data-ngalbumid='3' data-ngthumb=''>Image 2</a>
+                        <a href='' data-ngid='25' data-ngalbumid='3' data-ngthumb=''>Image 3</a>
+
+                        <!-- Other projects -->
+                        <a href='' data-ngkind='album' data-ngid='4' data-ngthumb=''>Other</a>
+                        <a href='./images/projects/aevDesc.png' data-ngid='26' data-ngalbumid='4' data-ngthumb='./images/projects/aev.png'>AEV Project</a>
+                        <a href='' data-ngid='27' data-ngalbumid='4' data-ngthumb=''>Image 2</a>
+                        <a href='' data-ngid='28' data-ngalbumid='4' data-ngthumb=''>Image 3</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End projects -->
+
+            <!-- Start contact -->
+            <div class='contact' id='cont'>
+                <div class='row text-banner' style='margin-top: 30px'>
+                    <h1>CONTACT</h1>
+                </div>
+                <div class='row'>
+                    <div class="col-sm-12">
+                        <ul>
+                            <li>
+                                <p><a href="mailto:haleem.9@osu.edu"><i class="fa fa-envelope fa-4x"></i></a></p>
+                                <p><strong>E-mail:</strong></br><a href="mailto:haleem.9@osu.edu">haleem.9@osu.edu</a></p>
+                            </li>
+                            <li>
+                                <p><a href="https://www.linkedin.com/in/reishaleem/" target="_blank"><i class="fa fa-linkedin fa-4x"></i></a></p>
+                                <p><strong>LinkedIn:</strong></br><a href="https://www.linkedin.com/in/reishaleem/ " target="_blank">reishaleem</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End Contact -->
+        </div> <!-- ./container-fluid>
+    </body>
+</html>

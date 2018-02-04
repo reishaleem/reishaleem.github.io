@@ -1,0 +1,254 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+body {
+    background-color: #960000;
+    /*padding-top: 50px;*/
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+}
+
+h1 {
+    font-size: 6em;
+}
+
+/*
+ * === Navbar styling ===
+ */
+
+/*
+ * --- Navbar transparent transition ---
+ */
+.navbar {
+    margin-bottom: 0px;
+}
+.navbar-transparent {
+    background:transparent;
+    background-image:none;
+    border-color:transparent;
+    box-shadow:none;
+    transition: background-color .5s ease 0s;
+}
+.navbar-transparent.nonactive {
+    background-color: #f8f8f8;
+    border-color: #e7e7e7;
+    transition: background-color .5s ease 0s;
+}
+.nav-transparent .active a {
+    background: none !important;
+    color: white !important;
+}
+.nav-transparent.nonactive .active a {
+    background: none !important;
+    color: black !important;
+}
+
+/*
+.navbar-default .navbar-nav>li>a {
+    color: #D0D3D4;
+}
+.navbar-default .navbar-brand {
+    color: #D0D3D4;
+}
+*/
+
+/*
+ * === Home styling ===
+ */
+
+ /*
+  * --- Image and logo (from logomakr.com) ---
+  */
+.fill-screen {
+    background-color: black;
+}
+.fill-screen > figure {
+    animation:imageAnimation 30s linear infinite 0s;
+    backface-visibility:hidden;
+    background-size:cover;
+    background-attachment: fixed;
+    /*background-position:center center;*/
+    color:transparent;
+    height:100%;
+    left:0px;
+    opacity:0;
+    position:absolute;
+    top:0px;
+    width:100%;
+    z-index:0;
+}
+.fill-screen > figure:nth-child(1) {
+    background-image:url('../images/friend.png');
+}
+.fill-screen > figure:nth-child(2) {
+    animation-delay:6s;
+    background-image:url('../images/family.png');
+}
+.fill-screen > figure:nth-child(3) {
+    animation-delay:12s;
+    background-image:url('../images/friend3.png');
+}
+.fill-screen > figure:nth-child(4) {
+    animation-delay:18s;
+    background-image:url('../images/me2.png');
+}
+.fill-screen > figure:nth-child(5) {
+    animation-delay:24s;
+    background-image:url('../images/friend2.jpg');
+}
+@keyframes imageAnimation {
+    0% {
+        animation-timing-function:ease-in;
+        opacity:0;
+    }
+    8% {
+        animation-timing-function:ease-out;
+        opacity:1;
+    }
+    17% {
+        opacity:1;
+    }
+    25% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+
+.title-row {
+    position: relative;
+    min-height: 300px;
+}
+.title-image {
+    position: absolute;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+/*
+ * --- down arrow icon with animation (from animate.css)
+ */
+.down-arrow {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+.down-arrow i {
+    color: white;
+}
+
+/*
+ * === Section banners ===
+ */
+.text-banner {
+    text-align: center;
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+ }
+ .text-banner h1 {
+    font-size: 44px;
+    color: #F4F4F2
+ }
+
+/*
+ * === About Me styling ===
+ */
+ .aboutme {
+    color: #F4F4F2;
+ }
+.aboutme a {
+    color: #FFD464;
+    text-decoration: none;
+}
+.aboutme a:hover {
+    color: #F26964;
+}
+.myPic {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin: 0px auto;
+    border: solid 3px black;
+}
+.icon a {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  display: block;
+  color: #960000;
+  text-decoration: none;
+  padding-top: 8px;
+  -webkit-transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.icon a:visited {
+   color: #960000;
+   text-decoration: none;
+}
+
+.socialMedia {
+  max-width: 100%;
+  margin: 0 auto;
+}
+.socialMedia ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  top: 20px;
+  margin-bottom: 30px;
+}
+.socialMedia ul li {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 70px;
+  height: 70px;
+  border: solid 8px black;
+  background: black;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.socialMedia ul li:hover {
+  border: solid 8px #FFD464;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+/*
+ * === Contact styling ===
+ */
+.contact ul {
+    display: flex;
+    justify-content: center;
+}
+.contact li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 1em;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #F2F2F4;
+}
+
+.contact p {
+    text-align: center;
+}
+
+.contact a {
+    color: #F2F2F4;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: #222;
+}
