@@ -66,11 +66,7 @@ h1 {
 .fill-screen > figure {
     animation:imageAnimation 30s linear infinite 0s;
     backface-visibility:hidden;
-    -webkit-background-size: cover;
-   -moz-background-size: cover;
-     -o-background-size: cover;
-        background-size: cover;
-    background-attachment: fixed;
+    background-size: cover;
     background-position: 50% 0;
     background-repeat: no-repeat;
     /*background-position:center center;*/
