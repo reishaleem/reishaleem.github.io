@@ -72,37 +72,13 @@ h1 {
     background-repeat: no-repeat;
     /*background-position:center center;*/
     color:transparent;
-    height:100%;
+    height:100vh;
     left:0px;
     opacity:0;
     position:absolute;
     top:0px;
     width:100%;
     z-index:0;
-}
-@media only screen and (max-width : 575px) {
-
-  .fill-screen > figure {
-    background-size: cover;
-  }
-}
-@media only screen and (max-width : 767px) {
-
-  .fill-screen > figure {
-    background-size: cover;
-  }
-}
-@media only screen and (max-width : 991px) {
-
-  .fill-screen > figure {
-    background-size: cover;
-  }
-}
-@media only screen and (max-width : 1199px) {
-
-  .fill-screen > figure {
-    background-size: cover;
-  }
 }
 .fill-screen > figure:nth-child(1) {
     background-image:url('./../images/friend.PNG');
