@@ -7,7 +7,6 @@ body {
     position: relative;
     height: 100%;
 }
-
 h1 {
     font-size: 6em;
 }
@@ -16,9 +15,7 @@ h1 {
  * === Navbar styling ===
  */
 
-/*
- * --- Navbar transparent transition ---
- */
+/* --- Navbar transparent transition --- */
 .navbar {
     margin-bottom: 0px;
 }
@@ -36,29 +33,47 @@ h1 {
 }
 .nav-transparent .active a {
     background: none !important;
-    color: white !important;
+    color: #7B7D7D !important;
+}
+.nav-transparent a:hover {
+    background: none !important;
+    color: #960000 !important;
 }
 .nav-transparent.nonactive .active a {
     background: none !important;
     color: black !important;
 }
+.nav-transparent.nonactive a {
+    background: none !important;
+    color: #7B7D7D !important;
+}
+.nav-transparent.nonactive a:hover {
+    background: none !important;
+    color: #960000 !important;
+}
+.navbar-transparent.nonactive .navbar-brand {
+    color: #7B7D7D;
+}
+.navbar-transparent.nonactive .navbar-brand:hover {
+    color: #960000;
+}
 
-/*
 .navbar-default .navbar-nav>li>a {
-    color: #D0D3D4;
+    color: white;
 }
 .navbar-default .navbar-brand {
-    color: #D0D3D4;
+    color: white;
 }
-*/
+.navbar-default .navbar-brand:hover {
+    color: #960000;
+}
+
 
 /*
  * === Home styling ===
  */
 
- /*
-  * --- Image and logo (from logomakr.com) ---
-  */
+ /* --- Image and logo (from logomakr.com) --- */
 .fill-screen {
     background-color: black;
 
@@ -117,8 +132,6 @@ h1 {
         opacity:0;
     }
 }
-
-
 .title-row {
     position: relative;
     min-height: 300px;
@@ -132,9 +145,7 @@ h1 {
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
 }
-/*
- * --- down arrow icon with animation (from animate.css)
- */
+/* --- down arrow icon with animation (from animate.css) --- */
 .down-arrow {
     position: absolute;
     bottom: 40px;
@@ -180,6 +191,8 @@ h1 {
     margin: 0px auto;
     border: solid 3px black;
 }
+
+/*
 .icon a {
   position: absolute;
   width: 100%;
@@ -225,7 +238,8 @@ h1 {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
   cursor: pointer;
-}
+} */
+
 
 /*
  * === Contact styling ===
@@ -242,7 +256,6 @@ h1 {
     text-align: center;
     color: #F2F2F4;
 }
-
 .contact p {
     text-align: center;
 }
