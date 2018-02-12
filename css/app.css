@@ -19,9 +19,6 @@ h1 {
 .navbar {
     margin-bottom: 0px;
 }
-.navbar i {
-    font-size: 1.5em;
-}
 .navbar-transparent {
     background:transparent;
     background-image:none;
@@ -60,17 +57,19 @@ h1 {
 .navbar-transparent.nonactive .navbar-brand:hover {
     color: #960000;
 }
-
 .navbar-default .navbar-nav>li>a {
     color: white;
 }
+.navbar i {
+    font-size: 1.5em;
+}
 .navbar-default .navbar-brand {
     color: white;
+    font-size: 1.5em;
 }
 .navbar-default .navbar-brand:hover {
     color: #960000;
 }
-
 
 /*
  * === Home styling ===
@@ -198,64 +197,19 @@ h1 {
     border: solid 3px black;
 }
 
-/*
-.icon a {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  display: block;
-  color: #960000;
-  text-decoration: none;
-  padding-top: 8px;
-  -webkit-transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+.aboutme h4 {
+    background: black;
+    border-radius: 15px;
 }
-.icon a:visited {
-   color: #960000;
-   text-decoration: none;
+.aboutme ul {
+    list-style: none;
 }
-
-.socialMedia {
-  max-width: 100%;
-  margin: 0 auto;
-}
-.socialMedia ul {
-  list-style: none;
-  padding: 0;
-  width: 100%;
-  position: relative;
-  top: 20px;
-  margin-bottom: 30px;
-}
-.socialMedia ul li {
-  display: inline-block;
-  border-radius: 50%;
-  overflow: hidden;
-  width: 70px;
-  height: 70px;
-  border: solid 8px black;
-  background: black;
-  position: relative;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-.socialMedia ul li:hover {
-  border: solid 8px #FFD464;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-  cursor: pointer;
-} */
 
 
 /*
  * === Contact styling ===
  */
-.contact ul {
-    display: flex;
-    justify-content: center;
-}
 .contact li {
-    display: inline-block;
     list-style-type: none;
     margin: 0 1em;
     margin-bottom: 40px;
