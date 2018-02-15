@@ -241,7 +241,7 @@ html, body, .container-fluid, .home, .home-row, .fill-screen {
    height: 300px;
    width: 300px;
    border-radius: 50%;
-   margin: 0px auto;
+   margin-bottom: 20px;
    border: solid 3px black;
    box-shadow: 0 1px 2px black, 0 -1px 1px black, inset 0 -1px 1px rgba(0,0,0,0.5), inset 0 1px 1px black;
 }
