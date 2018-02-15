@@ -1,91 +1,67 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Dosis|Rajdhani|Roboto);
+
 
 body {
-    background-color: #960000;
+    background-color: #ECF0F1;
     /*padding-top: 50px;*/
     font-family: 'Ubuntu', sans-serif;
-    position: relative;
+}
+
+html, body, .container-fluid, .home, .home-row, .fill-screen {
     height: 100%;
 }
-h1 {
-    font-size: 6em;
-}
 
-/*
- * === Navbar styling ===
- */
-
-/* --- Navbar transparent transition --- */
-.navbar {
-    margin-bottom: 0px;
-}
-.navbar-transparent {
-    background:transparent;
-    background-image:none;
+.navbar-trans {
+    background-color:transparent;
     border-color:transparent;
-    box-shadow:none;
-    transition: background-color .5s ease 0s;
 }
-.navbar-transparent.nonactive {
-    background-color: #f8f8f8;
-    border-color: #e7e7e7;
-    transition: background-color .5s ease 0s;
-}
-.nav-transparent .active a {
-    background: none !important;
-    color: #7B7D7D !important;
-}
-.nav-transparent a:hover {
-    background: none !important;
-    color: #960000 !important;
-}
-.nav-transparent.nonactive .active a {
-    background: none !important;
-    color: black !important;
-}
-.nav-transparent.nonactive a {
-    background: none !important;
-    color: #7B7D7D !important;
-}
-.nav-transparent.nonactive a:hover {
-    background: none !important;
-    color: #960000 !important;
-}
-.navbar-transparent.nonactive .navbar-brand {
-    color: #7B7D7D;
-}
-.navbar-transparent.nonactive .navbar-brand:hover {
-    color: #960000;
-}
-.navbar-default .navbar-nav>li>a {
-    color: white;
-}
-.navbar i {
+.navbar > .navbar-brand {
+    color: #212121;
     font-size: 1.5em;
 }
-.navbar-default .navbar-brand {
-    color: white;
-    font-size: 1.5em;
-}
-.navbar-default .navbar-brand:hover {
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
     color: #960000;
 }
+.iconNav {
+    font-size: 1.5em;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #212121;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #960000;
+}
+
 
 /*
- * === Home styling ===
+ * ============================
  */
 
- /* --- Image and logo (from logomakr.com) --- */
-.fill-screen {
-    background-color: black;
 
+.img-slideshow {
+    background-color: #FAE5D3;
+    border: solid 30px #FAE5D3;
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    padding: 20px;
+    top: 45%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
 }
-.fill-screen > figure {
+.img-slideshow > figure {
     animation:imageAnimation 30s linear infinite 0s;
     backface-visibility:hidden;
     background-size: cover;
-    background-position: 50% 0;
     background-repeat: no-repeat;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     /*background-position:center center;*/
     /*color:transparent;*/
     height:100%;
@@ -96,22 +72,22 @@ h1 {
     width:100%;
     /*z-index:0;*/
 }
-.fill-screen > figure:nth-child(1) {
+.img-slideshow > figure:nth-child(1) {
     background-image:url('./../images/friend.PNG');
 }
-.fill-screen > figure:nth-child(2) {
+.img-slideshow > figure:nth-child(2) {
     animation-delay:6s;
     background-image:url('./../images/family.PNG');
 }
-.fill-screen > figure:nth-child(3) {
+.img-slideshow > figure:nth-child(3) {
     animation-delay:12s;
     background-image:url('./../images/temp.jpg');
 }
-.fill-screen > figure:nth-child(4) {
+.img-slideshow > figure:nth-child(4) {
     animation-delay:18s;
     background-image:url('./../images/me2.PNG');
 }
-.fill-screen > figure:nth-child(5) {
+.img-slideshow > figure:nth-child(5) {
     animation-delay:24s;
     background-image:url('./../images/friend2.JPG');
 }
@@ -134,97 +110,102 @@ h1 {
         opacity:0;
     }
 }
-.title-row {
-    position: relative;
-    min-height: 300px;
-}
-.title-image {
+.typewriter {
     position: absolute;
-    padding: 20px;
-    top: 50%;
+    top: 15%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    font-size: .5em;
+}
+.fake-navbar {
+    position: absolute;
+    top: 75%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
 }
-/* --- down arrow icon with animation (from animate.css) --- */
+.fake-navbar ul {
+    list-style: none;
+}
+.fake-navbar > ul > li {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+.fake-navbar a {
+    text-decoration: none;
+    color: #212121;
+}
+.fake-navbar a:hover {
+    color: #960000;;
+}
 .down-arrow {
     position: absolute;
     bottom: 40px;
     width: 100%;
     text-align: center;
 }
-.down-arrow i {
-    color: white;
+.down-arrow a {
+    color: #212121;
+    text-decoration: none;
+}
+
+
+.sexy-separator {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+}
+.section-banner {
+    font-family: 'Dosis', sans-serif;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.section-banner > h1 {
+    text-align: center;
 }
 
 /*
- * === Section banners ===
+ * ==================
  */
-.text-banner {
-    text-align: center;
-    background-color: black;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
-    /*box-shadow: 0 1px 2px black, 0 -1px 1px black, inset 0 -1px 1px rgba(0,0,0,0.5), inset 0 1px 1px black;
-    -moz-box-shadow: 0 1px 2px black, 0 -1px 1px black, inset 0 -1px 1px rgba(0,0,0,0.5), inset 0 1px 1px black);
-    -webkit-box-shadow: 0 1px 2px black, 0 -1px 1px black, inset 0 -1px 1px rgba(0,0,0,0.5), inset 0 1px 1px black;*/
- }
- .text-banner h1 {
-    font-size: 44px;
-    color: #F4F4F2
- }
-
-/*
- * === About Me styling ===
- */
- .aboutme {
-    color: #F4F4F2;
- }
+.aboutme p {
+   color: #5F6A6A;
+}
 .aboutme a {
-    color: #FFD464;
-    text-decoration: none;
+   color: #960000;
+   text-decoration: none;
 }
 .aboutme a:hover {
-    color: #F26964;
+   color: #F26964;
 }
-.myPic {
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    margin: 0px auto;
-    border: solid 3px black;
+.about-picture {
+   height: 300px;
+   width: 300px;
+   border-radius: 50%;
+   margin: 0px auto;
+   border: solid 3px black;
+   box-shadow: 0 1px 2px black, 0 -1px 1px black, inset 0 -1px 1px rgba(0,0,0,0.5), inset 0 1px 1px black;
 }
 
-.aboutme h4 {
-    background: black;
-    border-radius: 15px;
+
+.contactList {
+    text-align: center;
 }
-.aboutme ul {
+.contactList ul {
     list-style: none;
 }
-
-
-/*
- * === Contact styling ===
- */
-.contact li {
-    list-style-type: none;
-    margin: 0 1em;
-    margin-bottom: 40px;
-    text-align: center;
-    color: #F2F2F4;
-}
-.contact p {
-    text-align: center;
-}
-
-.contact a {
-    color: #F2F2F4;
+.contactList a {
+    color: #212121;
     text-decoration: none;
 }
-
-.contact a:hover {
-    color: #222;
+.contactList a:hover {
+    color: #960000;
 }
