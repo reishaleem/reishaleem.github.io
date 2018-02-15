@@ -169,6 +169,7 @@ html, body, .container-fluid, .home, .home-row, .fill-screen {
     color: #960000;;
 }
 @media only screen and (max-width: 768px) {
+    /* Remove padding */
     .fake-navbar ul {
         padding: 0px;
     }
