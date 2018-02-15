@@ -1,17 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu);
 @import url(https://fonts.googleapis.com/css?family=Dosis|Rajdhani|Roboto);
 
-
 body {
     background-color: #ECF0F1;
     /*padding-top: 50px;*/
     font-family: 'Ubuntu', sans-serif;
 }
-
 html, body, .container-fluid, .home, .home-row, .fill-screen {
     height: 100%;
 }
 
+/*---------------------------------------------------------------------------*/
+
+/*
+ * Making the navbar transparent and changing colors
+ * =================================================
+ */
 .navbar-trans {
     background-color:transparent;
     border-color:transparent;
@@ -33,12 +37,12 @@ html, body, .container-fluid, .home, .home-row, .fill-screen {
     color: #960000;
 }
 
+/*----------------------------------------------------------------------------*/
 
 /*
- * ============================
+ * Creating the image slideshow with the beigeish background
+ * =========================================================
  */
-
-
 .img-slideshow {
     background-color: #FAE5D3;
     border: solid 30px #FAE5D3;
@@ -72,6 +76,21 @@ html, body, .container-fluid, .home, .home-row, .fill-screen {
     width:100%;
     /*z-index:0;*/
 }
+@media only screen and (max-width: 768px) {
+    .img-slideshow {
+        background-color: #FAE5D3;
+        border: solid 30px #FAE5D3;
+        height: 50%;
+        width: 75%;
+        position: absolute;
+        padding: 20px;
+        top: 45%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+    }
+}
 .img-slideshow > figure:nth-child(1) {
     background-image:url('./../images/friend.PNG');
 }
@@ -100,16 +119,14 @@ html, body, .container-fluid, .home, .home-row, .fill-screen {
         animation-timing-function:ease-out;
         opacity:1;
     }
-    17% {
-        opacity:1;
-    }
-    25% {
-        opacity:0;
-    }
-    100% {
-        opacity:0;
-    }
+    17% { opacity:1; }
+    25% { opacity:0; }
+    100% { opacity:0; }
 }
+/*
+ * Changing the color of the typewriter thumbnailHoverEffect
+ * =========================================================
+ */
 .typewriter {
     position: absolute;
     top: 15%;
@@ -119,6 +136,15 @@ html, body, .container-fluid, .home, .home-row, .fill-screen {
     -webkit-transform: translate(-50%, -50%);
     font-size: .5em;
 }
+@media only screen and (max-width: 768px) {
+    .typewriter h1 p {
+        font-size: .5em;
+    }
+}
+/*
+ * Adding in the navbar under the slideshow
+ * ========================================
+ */
 .fake-navbar {
     position: absolute;
     top: 75%;
@@ -143,6 +169,18 @@ html, body, .container-fluid, .home, .home-row, .fill-screen {
 .fake-navbar a:hover {
     color: #960000;;
 }
+@media only screen and (max-width: 768px) {
+    .fake-navbar > ul > li {
+        display: inline;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 1em;
+    }
+}
+/*
+ * Changing the color of the font awesome down arrow. Animated by animate.css
+ * ==========================================================================
+ */
 .down-arrow {
     position: absolute;
     bottom: 40px;
@@ -154,7 +192,12 @@ html, body, .container-fluid, .home, .home-row, .fill-screen {
     text-decoration: none;
 }
 
+/*----------------------------------------------------------------------------*/
 
+/*
+ * Styling the <hr> element to be beautiful
+ * ========================================
+ */
 .sexy-separator {
     border: 0;
     height: 1px;
@@ -163,18 +206,24 @@ html, body, .container-fluid, .home, .home-row, .fill-screen {
     background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
     background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
 }
+/*
+ * Changing the font and alignment of each sections header
+ * =======================================================
+ */
 .section-banner {
     font-family: 'Dosis', sans-serif;
     margin-bottom: 30px;
     display: block;
 }
-
 .section-banner > h1 {
     text-align: center;
 }
 
+/*----------------------------------------------------------------------------*/
+
 /*
- * ==================
+ * About me section styles. Changing color and link hovers. Also adding an image
+ * =============================================================================
  */
 .aboutme p {
    color: #5F6A6A;
@@ -195,12 +244,14 @@ html, body, .container-fluid, .home, .home-row, .fill-screen {
    box-shadow: 0 1px 2px black, 0 -1px 1px black, inset 0 -1px 1px rgba(0,0,0,0.5), inset 0 1px 1px black;
 }
 
+/*----------------------------------------------------------------------------*/
 
+/*
+ * Contact list section styles. Centering the list as well as changing colors.
+ * ===========================================================================
+ */
 .contactList {
     text-align: center;
-}
-.contactList ul {
-    list-style: none;
 }
 .contactList a {
     color: #212121;
