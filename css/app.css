@@ -79,8 +79,8 @@ html, body, .container-fluid, .home, .home-row, .fill-screen {
 }
 @media only screen and (max-width: 768px) {
     .img-slideshow {
-        background-color: #FAE5D3;
-        border: solid 30px #FAE5D3;
+        background-color: #ECF0F1;
+        border: solid 30px #ECF0F1;
         height: 50%;
         width: 75%;
         position: absolute;
@@ -92,7 +92,7 @@ html, body, .container-fluid, .home, .home-row, .fill-screen {
         -webkit-transform: translate(-50%, -50%);
     }
     .img-slideshow > figure {
-        border-radius: 0px;
+        border-radius: 15px;
     }
 }
 .img-slideshow > figure:nth-child(1) {
