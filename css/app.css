@@ -44,8 +44,8 @@ html, body, .container-fluid, .home, .home-row, .fill-screen {
  * =========================================================
  */
 .img-slideshow {
-    background-color: #FAE5D3;
-    border: solid 30px #FAE5D3;
+    background-color: #ECF0F1;
+    border: solid 30px #ECF0F1;
     height: 50%;
     width: 50%;
     position: absolute;
@@ -57,6 +57,7 @@ html, body, .container-fluid, .home, .home-row, .fill-screen {
     -webkit-transform: translate(-50%, -50%);
 }
 .img-slideshow > figure {
+    border-radius: 15px;
     animation:imageAnimation 30s linear infinite 0s;
     backface-visibility:hidden;
     background-size: cover;
@@ -89,6 +90,9 @@ html, body, .container-fluid, .home, .home-row, .fill-screen {
         margin-right: -50%;
         transform: translate(-50%, -50%);
         -webkit-transform: translate(-50%, -50%);
+    }
+    .img-slideshow > figure {
+        border-radius: 0px;
     }
 }
 .img-slideshow > figure:nth-child(1) {
@@ -129,7 +133,7 @@ html, body, .container-fluid, .home, .home-row, .fill-screen {
  */
 .typewriter {
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -147,7 +151,7 @@ html, body, .container-fluid, .home, .home-row, .fill-screen {
  */
 .fake-navbar {
     position: absolute;
-    top: 75%;
+    top: 72%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -201,6 +205,7 @@ html, body, .container-fluid, .home, .home-row, .fill-screen {
  * ========================================
  */
 .sexy-separator {
+    margin-top: 20px;
     border: 0;
     height: 1px;
     background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
@@ -252,9 +257,13 @@ html, body, .container-fluid, .home, .home-row, .fill-screen {
  * Contact list section styles. Centering the list as well as changing colors.
  * ===========================================================================
  */
+.contact .sexy-separator {
+    margin-top: 36px;
+}
 .contactList {
     text-align: center;
 }
+
 .contactList a {
     color: #212121;
     text-decoration: none;
