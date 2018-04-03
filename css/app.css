@@ -43,94 +43,31 @@ html, body, .container-fluid, .home, .home-row, .fill-screen {
  * Creating the image slideshow with the beigeish background
  * =========================================================
  */
-.img-slideshow {
-    background-color: #ECF0F1;
-    border: solid 30px #ECF0F1;
-    height: 50%;
-    width: 50%;
+
+ .slideshow {
+     height: 400px;
+     width: 700px;
+     position: absolute;
+     padding: 20px;
+     top: 45%;
+     left: 50%;
+     margin-right: -50%;
+     transform: translate(-50%, -50%);
+     -webkit-transform: translate(-50%, -50%);
+ }
+ .slideshow img {
+          border-radius: 20px;
     position: absolute;
-    padding: 20px;
-    top: 45%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-}
-.img-slideshow > figure {
-    border-radius: 15px;
-    animation:imageAnimation 36s linear infinite 0s;
-    backface-visibility:hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
     top: 50%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
-    /*background-position:center center;*/
-    /*color:transparent;*/
-    height:100%;
-    /*left:0px;*/
-    opacity:0;
-    position:absolute;
-    /*top:0px;*/
-    width:100%;
-    /*z-index:0;*/
-}
-@media only screen and (max-width: 768px) {
-    .img-slideshow {
-        background-color: #ECF0F1;
-        border: solid 30px #ECF0F1;
-        height: 50%;
-        width: 75%;
-        position: absolute;
-        padding: 20px;
-        top: 45%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-    }
-    .img-slideshow > figure {
-        border-radius: 15px;
-    }
-}
-.img-slideshow > figure:nth-child(1) {
-    background-image:url('./../images/friend.PNG');
-}
-.img-slideshow > figure:nth-child(2) {
-    animation-delay:6s;
-    background-image:url('./../images/family.PNG');
-}
-.img-slideshow > figure:nth-child(3) {
-    animation-delay:12s;
-    background-image:url('./../images/seat1.jpg');
-}
-.img-slideshow > figure:nth-child(4) {
-    animation-delay:18s;
-    background-image:url('./../images/me2.PNG');
-}
-.img-slideshow > figure:nth-child(5) {
-    animation-delay:24s;
-    background-image:url('./../images/friend2.JPG');
-}
-.img-slideshow > figure:nth-child(6) {
-    animation-delay:30s;
-    background-image:url('./../images/seat2.JPG');
-}
-@keyframes imageAnimation {
-    0% {
-        animation-timing-function:ease-in;
-        opacity:0;
-    }
-    8% {
-        animation-timing-function:ease-out;
-        opacity:1;
-    }
-    17% { opacity:1; }
-    25% { opacity:0; }
-    100% { opacity:0; }
-}
+    height: 400px;
+    min-width: 700px;
+    max-width: 700px;
+
+  }
 /*
  * Changing the color of the typewriter thumbnailHoverEffect
  * =========================================================
