@@ -56,7 +56,7 @@ html, body, .container-fluid, .home, .home-row, .fill-screen {
      -webkit-transform: translate(-50%, -50%);
  }
  .slideshow img {
-          border-radius: 20px;
+    border-radius: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -67,6 +67,32 @@ html, body, .container-fluid, .home, .home-row, .fill-screen {
     min-width: 700px;
     max-width: 700px;
 
+  }
+  @media only screen and (max-width: 768px) {
+      .slideshow {
+          height: 400px;
+          width: 300px;
+          position: absolute;
+          padding: 20px;
+          top: 45%;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+      }
+      .slideshow img {
+         border-radius: 20px;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         margin-right: -50%;
+         transform: translate(-50%, -50%);
+         -webkit-transform: translate(-50%, -50%);
+         height: 250px;
+         min-width: 300px;
+         max-width: 300px;
+
+       }
   }
 /*
  * Changing the color of the typewriter thumbnailHoverEffect
