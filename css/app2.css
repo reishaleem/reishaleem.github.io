@@ -1,0 +1,191 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+@import url(https://fonts.googleapis.com/css?family=Dosis|Rajdhani|Roboto);
+@import url(https://fonts.googleapis.com/css?family=Nixie+One);
+
+body {
+  background-color: #e5e5e5;
+  font-family: 'Rajdhani', 'sans-serif';
+}
+h4 {
+  font-family: 'riffic-bold', 'sans-serif';
+}
+
+a {
+  text-decoration: none;
+  color: #ea3057;
+}
+
+
+/*
+ * Customizing navbar colors and font size
+ * =======================================
+ */
+.custom-nav {
+  background-color: #e5e5e5;
+  font-size: 1em;
+
+}
+.custom-nav > .navbar-brand {
+  color: #191919;
+  font-size: 1.5em;
+}
+.custom-nav > .icons .nav-link{
+  color: #191919;
+}
+.custom-nav > .icons .nav-link:hover {
+  color: #ea3057;
+}
+
+
+/*
+ * CSS for Home page
+ * ---------------------------------------------------------------------------
+ */
+
+
+.home {
+  height: 93.7vh;
+}
+
+/* Typewrtier */
+.typewriter {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    color: #191919;
+    font-family: 'riffic-bold';
+}
+@media only screen and (max-width: 768px) {
+    .typewriter h1 p {
+        font-size: .8em;
+    }
+}
+
+
+.slideshow {
+  padding-top: 10px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  height: 45%;
+  max-height: 400px;
+}
+.slideshow > .carousel > .carousel-inner > .carousel-item > img {
+  height: 100%;
+  width: 90%;
+  max-height: 400px;
+  max-width: 700px;
+}
+
+/*
+ * nav section underneat slideshow
+ */
+.sections {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    font-family: 'riffic-bold';
+}
+.sections a {
+    text-decoration: none;
+    color: #191919;
+    font-size: 1.2em;
+}
+.sections a:hover {
+    color: #ea3057;
+}
+
+.down-arrow {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+.down-arrow a {
+    color: #191919;
+    text-decoration: none;
+}
+
+/*
+ * Separator and section header between each section
+ */
+.separator {
+    margin-top: 20px;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #e5e5e5, #5b5553, #e5e5e5);
+    background-image: -moz-linear-gradient(left, #e5e5e5, #5b5553, #e5e5e5);
+    background-image: -ms-linear-gradient(left, #e5e5e5, #5b5553, #e5e5e5);
+    background-image: -o-linear-gradient(left, #e5e5e5, #5b5553, #e5e5e5);
+}
+.section-header {
+    font-family: 'riffic-bold', 'Ubuntu', 'sans-serif';
+    background-color: #ea3057;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.section-header-right {
+  padding-left: 20px;
+}
+.section-header-left {
+        padding-right: 20px;
+}
+
+.about-me, .projects, .contact {
+  font-family: 'Nixie One', 'sans-serif';
+  font-weight: bolder;
+  line-height: 1.4em;
+}
+.projects img, .profile-pic, .contact-list {
+    border: solid 10px #fffcea;
+    -webkit-box-shadow: 6px 6px rgba(0,0,0,.1);
+    box-shadow: 6px 6px rgba(0,0,0,.1);
+    cursor: pointer;
+}
+.profile-pic {
+  height: 400px;
+  width: 400px;
+}
+@media only screen and (max-width: 768px) {
+    .profile-pic {
+      height: 200px;
+      width: 200px;
+    }
+}
+
+/* coloring the list itself */
+.contact-list a {
+  background-color: #ea3057;
+  color: #191919;
+}
+.contact-list a:hover {
+  background-color: #ea3057;
+}
+/* coloring the active item of the list */
+.list-group-item.active {
+    z-index: 2;
+    color: #191919;
+    background-color: #ea3057;
+    border-color: #191919;
+}
+/*
+ * bold paragraph in between each social media handle in contact-list
+ */
+.contact-social-media-header {
+  font-family: 'riffic-bold', 'Ubuntu', 'sans-serif';
+  display: inline;
+}
+
+.footer {
+  margin-top: 20px;
+  border-top: 1px solid black;
+}
