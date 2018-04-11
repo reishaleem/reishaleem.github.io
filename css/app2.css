@@ -64,7 +64,7 @@ a {
   padding-top: 10px;
   height: 50%;
   max-height: 400px;
-  width: 50%;
+  width: 100%;
 }
 .slideshow > .carousel > .carousel-inner > .carousel-item > img {
   height: 100%;
@@ -72,6 +72,10 @@ a {
   max-height: 400px;
   max-width: 700px;
 }
+
+/*
+ * Making bootstrap carousel fade
+ */
 
 /*
  * nav section underneat slideshow
@@ -90,8 +94,7 @@ a {
 }
 
 .down-arrow {
-    position: absolute;
-    bottom: 40px;
+  margin-top: 65px;
     width: 100%;
     text-align: center;
 }
