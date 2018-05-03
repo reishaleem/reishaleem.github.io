@@ -3,7 +3,7 @@
 @import url(https://fonts.googleapis.com/css?family=Nixie+One);
 
 body {
-  background-color: #e5e5e5;
+  background-color: #eae7dc;
   font-family: 'Rajdhani', 'sans-serif';
 }
 h4 {
@@ -21,7 +21,7 @@ a {
  * =======================================
  */
 .custom-nav {
-  background-color: #e5e5e5;
+  background-color: #eae7dc;
   font-size: 1em;
 
 }
@@ -117,7 +117,7 @@ a {
 }
 .section-header {
     font-family: 'riffic-bold', 'Ubuntu', 'sans-serif';
-    background-color: #ea3057;
+    background-color: #e98074;
     padding-top: 40px;
     padding-bottom: 20px;
 }
@@ -132,8 +132,9 @@ a {
   font-family: 'Nixie One', 'sans-serif';
   font-weight: bolder;
   line-height: 1.4em;
+  color: rgba(62,62,62,.8);
 }
-.projects img, .profile-pic, .contact-list {
+.projects img, .profile-pic{
     border: solid 10px #fffcea;
     -webkit-box-shadow: 6px 6px rgba(0,0,0,.1);
     box-shadow: 6px 6px rgba(0,0,0,.1);
@@ -150,27 +151,16 @@ a {
     }
 }
 
-/* coloring the list itself */
-.contact-list a {
-  background-color: #ea3057;
-  color: #191919;
-}
-.contact-list a:hover {
-  background-color: #ea3057;
-}
-/* coloring the active item of the list */
-.list-group-item.active {
-    z-index: 2;
-    color: #191919;
-    background-color: #ea3057;
-    border-color: #191919;
-}
 /*
  * bold paragraph in between each social media handle in contact-list
  */
 .contact-social-media-header {
   font-family: 'riffic-bold', 'Ubuntu', 'sans-serif';
   display: inline;
+}
+
+.contact-list {
+  padding-top: 40px;
 }
 
 .footer {
