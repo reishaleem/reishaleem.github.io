@@ -55,7 +55,7 @@ a {
 }
 @media only screen and (max-width: 768px) {
     .typewriter h1 p {
-        font-size: .8em;
+        font-size: .5em;
     }
 }
 
