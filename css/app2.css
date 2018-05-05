@@ -22,7 +22,7 @@ a {
  */
 .custom-nav {
   background-color: #eae7dc;
-  font-size: 1em;
+  font-size: 1.3em;
 
 }
 .custom-nav > .navbar-brand {
@@ -58,7 +58,6 @@ a {
         font-size: .5em;
     }
 }
-
 
 .slideshow {
   padding-top: 10px;
