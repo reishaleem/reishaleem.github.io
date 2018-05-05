@@ -38,11 +38,9 @@ a {
 
 
 /*
- * CSS for Home page
+ *                             CSS for Home page
  * ---------------------------------------------------------------------------
  */
-
-
 .home {
   height: 93.7vh;
 }
@@ -58,7 +56,6 @@ a {
         font-size: .5em;
     }
 }
-
 .slideshow {
   padding-top: 10px;
   height: 50%;
@@ -71,13 +68,8 @@ a {
   max-height: 400px;
   max-width: 700px;
 }
-
 /*
- * Making bootstrap carousel fade
- */
-
-/*
- * nav section underneat slideshow
+ * nav section underneath slideshow
  */
 .sections {
   padding-top: 15px;
@@ -91,9 +83,13 @@ a {
 .sections a:hover {
     color: #ea3057;
 }
+/*---------------------------------------------------------------------------*/
 
+/*
+ * Positioning down arrow
+ */
 .down-arrow {
-  margin-top: 65px;
+    margin-top: 65px;
     width: 100%;
     text-align: center;
 }
@@ -127,6 +123,10 @@ a {
         padding-right: 20px;
 }
 
+/*
+ *                 CSS for About, projects, and contact pages
+ * ---------------------------------------------------------------------------
+ */
 .about-me, .projects, .contact {
   font-family: 'Nixie One', 'sans-serif';
   font-weight: bolder;
@@ -143,25 +143,28 @@ a {
   height: 400px;
   width: 400px;
 }
+/* Lower the image for small screens of typewriter */
 @media only screen and (max-width: 768px) {
     .profile-pic {
-      height: 200px;
-      width: 200px;
+      height: 300px;
+      width: 300px;
     }
 }
-
 /*
- * bold paragraph in between each social media handle in contact-list
+ * bold paragraph before each social media handle.
  */
 .contact-social-media-header {
   font-family: 'riffic-bold', 'Ubuntu', 'sans-serif';
   display: inline;
 }
-
 .contact-list {
   padding-top: 40px;
 }
+/*---------------------------------------------------------------------------*/
 
+/*
+ * footer
+ */
 .footer {
   margin-top: 20px;
   border-top: 1px solid black;
