@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis|Rajdhani|Roboto|Ubuntu|Nixie+One);
 
+body {
+    background-color: #F7CAC9;
+}
 /* Coloring each link */
 a {
     text-decoration: none;
@@ -26,7 +29,7 @@ a:hover {
 }
 .section-header {
     font-family: 'riffic-bold', 'Ubuntu', 'sans-serif';
-    background-color: #e98074;
+    background-color: #CE3175;
 }
 
 
