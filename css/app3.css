@@ -71,6 +71,7 @@ a:hover {
 .slideshow > .carousel > .carousel-inner > .carousel-item > img {
     width: 90%;
     max-height: 400px;
+    max-width: 700px;
 }
 .down-arrow a {
     color: #191919;
