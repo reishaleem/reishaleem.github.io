@@ -1,7 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Dosis|Rajdhani|Roboto|Ubuntu|Nixie+One);
-
+@import url(https://fonts.googleapis.com/css?family=Muli|Montserrat|Questrial);
 body {
-    background-color: #EADEDB;
+    background-color: #FEF5E7;
 }
 /* Coloring each link */
 a {
@@ -17,36 +16,34 @@ a:hover {
     margin-top: 20px;
     border: 0;
     height: 1px;
-    background-image: -webkit-linear-gradient(left, #e5e5e5, #5b5553, #e5e5e5);
-    background-image: -moz-linear-gradient(left, #e5e5e5, #5b5553, #e5e5e5);
-    background-image: -ms-linear-gradient(left, #e5e5e5, #5b5553, #e5e5e5);
-    background-image: -o-linear-gradient(left, #e5e5e5, #5b5553, #e5e5e5);
+    background-image: -webkit-linear-gradient(left, #FEF5E7, #5b5553, #FEF5E7);
+    background-image: -moz-linear-gradient(left, #FEF5E7, #5b5553, #FEF5E7);
+    background-image: -ms-linear-gradient(left, #FEF5E7, #5b5553, #FEF5E7);
+    background-image: -o-linear-gradient(left, #FEF5E7, #5b5553, #FEF5E7);
 }
 .about-me, .projects, .contact {
-    font-family: 'Nixie One', 'sans-serif';
-    font-weight: bolder;
+    font-family: 'Questrial', 'sans-serif';
     line-height: 1.4em;
 }
 .section-header {
-    font-family: 'riffic-bold', 'Ubuntu', 'sans-serif';
-    background-color: #CE3175;
+    font-family: 'Montserrat', 'sans-serif';
 }
 
-
-/*
- *                             CSS for Home page
- * ---------------------------------------------------------------------------
- */
+/* CSS for home page */
 .home {
     height: 92vh;
 }
 .navbar a {
-    font-family: 'Rajdhani', 'sans-serif';
+    font-family: 'Muli', 'sans-serif';
     font-size: 1.5em;
+    color: black !important;
+}
+.navbar a:hover {
+    color: #ea3057 !important;
 }
 
 .typewriter {
-    font-family: 'riffic-bold';
+    font-family: 'Montserrat', cursive;
 }
 /* make typewriter font smaller for small screens */
 @media only screen and (max-width: 768px) {
@@ -55,7 +52,7 @@ a:hover {
     }
 }
 .sections {
-    font-family: 'riffic-bold';
+    font-family: 'Montserrat';
 }
 .sections a {
     color: #191919;
@@ -74,17 +71,13 @@ a:hover {
     max-width: 700px;
 }
 .down-arrow a {
-    color: #191919;
+    color: black;
 }
 
-
-/*
- *                            CSS for About page
- * ---------------------------------------------------------------------------
- */
+/* CSS for about page */
 .profile-pic {
-    height: 400px;
-    width: 400px;
+    height: 450px;
+    width: 450px;
 }
 /* Lower the about me image size for small screens */
 @media only screen and (max-width: 768px) {
@@ -94,11 +87,7 @@ a:hover {
     }
 }
 
-
-/*
- *                          CSS for Project page
- * ---------------------------------------------------------------------------
- */
+/* CSS for projects page */
 .projects img, .profile-pic{
     border: solid 10px #fffcea;
     -webkit-box-shadow: 6px 6px rgba(0,0,0,.1);
@@ -108,16 +97,11 @@ a:hover {
     cursor: pointer;
 }
 
-
-
-/*
- *                          CSS for Contact page
- * ---------------------------------------------------------------------------
- */
+/* CSS for contact page */
 .contact h4 {
-    font-family: 'riffic-bold', 'Ubuntu', 'sans-serif';
+    font-family: 'Montserrat', 'sans-serif';
 }
 .contact-social-media-header {
-    font-family: 'riffic-bold', 'Ubuntu', 'sans-serif';
+    font-family: 'Montserrat', 'sans-serif';
     display: inline;
 }
