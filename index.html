@@ -18,14 +18,7 @@
     <script type='text/javascript' src='./scripts/typewriter.js'></script>
     <script type='text/javascript' src='./scripts/jquery.easing.1.3.js'></script>
     <script type='text/javascript' src='./scripts/scrolling.js'></script>
-    <script>
-    $(function () {
-        $('[data-toggle="popover"]').popover()
-        $('.popover-dismiss').popover({
-            trigger: 'focus'
-        })
-    })
-    </script>
+    <script type='text/javascript' src='./scripts/projects.js'></script>
 </head>
 <body>
 
@@ -192,22 +185,51 @@
                     <p>
                         You can check out my github <a href='https://github.com/reishaleem'>here</a>.
                     </p>
+                    <br>
+                    <div id='projects-info'>
+                        <div id='placeholder' class='project-info' data-page='placeholder'>
+                            <p></p>
+                        </div>
+                        <div id='website-info' class='project-info hide' data-page='website'>
+                            <h5>Personal Website</h5>
+                            <p><div class='contact-social-media-header'>Language(s): </div>HTML/CSS</p>
+                            <p>
+                                This website was made using HTML, CSS, and Bootstrap. I used the HTML and Bootstrap to format the website, and I used 
+                                the CSS to add color and other styles to the website. I also used JavaScript to add effects such as a type writer and 
+                                smooth scrolling. Making this website was an enjoyable experience, and it greatly increased my interest in web development!
+                            </p>
+                        </div>
+                        <div id='aev-info' class='project-info hide' data-page='aev'>
+                            <h5>Advanced Energy Vehicle (AEV)</h5>
+                            <p><div class='contact-social-media-header'>Language(s): </div>Arduino</p>
+                            <p>
+                                The AEV project was assigned by the first year engineering class at Ohio State. My team consisted of 4 members. The design for the AEV was made using
+                                SolidWorks. Students were given the option to 3D print parts of the AEV that were not available in the given lab kit.
+                                The goal of the project was to have the AEV traverse a track and complete the following steps: stop before a gate and 
+                                activate a motion sensor, wait for the gate to lift, continue through the track, pick up a piece of cargo by using a 
+                                magnet, and then come back to the beginning, once again going through the gate. The AEV was programmed with an Arduino.
+                            </p>
+                            <p>
+                                <div class='contact-social-media-header'>More Information: </div>
+                                <a href='https://u.osu.edu/engr118232466spr2017groupl/' target='blank'>My Team's Experience</a>, 
+                                <a href='https://eed.osu.edu/advanced-energy-vehicle-project' target='blank'>AEV Project Description</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <div class='col-md-6'>
                     <div class='row'>
-                        <div class='col-sm-6'>
-                            <a class='d-block mb-4 h-100'>
+                        <div class='col-sm-6' id='project-hidden'>
+                            <a class='d-block mb-4 h-100' data-page='aev'>
                                 <img class='img-fluid' src='./images/projects/aev.png' alt='AEV' tabindex='0' data-toggle='popover' data-trigger='focus' data-placement='top' title='Advanced Energy Vehicle (AEV)' data-content='The AEV project was assigned by the first year engineering class at Ohio State.
                                 It was implemented using SolidWorks to design and Arduino to program the AEV.
                                 The AEV was to traverse a track, go through a gate, pick up cargo with a magnet,
                                 and bring the cargo back along the track to the starting point.' />
                             </a>
                         </div>
-                        <div class='col-sm-6'>
-                            <a class='d-block mb-4 h-100'>
-                                <img class='img-fluid' src='./images/projects/personalwebsite.PNG' tabindex='0' alt='Website' data-toggle='popover' data-trigger='focus' data-placement='top' title='This Website!' data-content='My personal website was made with html, css, and bootstrap.
-                                I implemented javascript to add some additional features. The CSS was used mainly for colors and other unique flavors of style.
-                                Creating this website was a lot of fun and helped me become very interested in front end development!' />
+                        <div class='col-sm-6' id='project-hidden'>
+                            <a class='d-block mb-4 h-100' data-page='website'>
+                                <img class='img-fluid' src='./images/projects/personalwebsite.PNG'/>
                             </a>
                         </div>
                     </div>

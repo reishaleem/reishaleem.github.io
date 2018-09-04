@@ -96,6 +96,9 @@ a:hover {
 .projects img {
     cursor: pointer;
 }
+.hide {
+    display: none;
+}
 
 /* CSS for contact page */
 .contact h4 {
