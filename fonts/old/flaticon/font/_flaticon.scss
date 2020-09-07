@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 07/09/2020 20:08
+    Creation date: 20/03/2019 02:18
     */
 
     @font-face {
@@ -37,20 +37,18 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-earth:before { content: "\f100"; }
-.flaticon-book:before { content: "\f101"; }
-.flaticon-books-stack-of-three:before { content: "\f102"; }
-.flaticon-clipboard:before { content: "\f103"; }
-.flaticon-motherboard:before { content: "\f104"; }
-.flaticon-picture:before { content: "\f105"; }
-.flaticon-flasks:before { content: "\f106"; }
-.flaticon-hydro-power:before { content: "\f107"; }
+    .flaticon-ideas:before { content: "\f100"; }
+.flaticon-flasks:before { content: "\f101"; }
+.flaticon-analysis:before { content: "\f102"; }
+.flaticon-ux-design:before { content: "\f103"; }
+.flaticon-web-design:before { content: "\f104"; }
+.flaticon-idea:before { content: "\f105"; }
+.flaticon-innovation:before { content: "\f106"; }
     
-    $font-Flaticon-earth: "\f100";
-    $font-Flaticon-book: "\f101";
-    $font-Flaticon-books-stack-of-three: "\f102";
-    $font-Flaticon-clipboard: "\f103";
-    $font-Flaticon-motherboard: "\f104";
-    $font-Flaticon-picture: "\f105";
-    $font-Flaticon-flasks: "\f106";
-    $font-Flaticon-hydro-power: "\f107";
+    $font-Flaticon-ideas: "\f100";
+    $font-Flaticon-flasks: "\f101";
+    $font-Flaticon-analysis: "\f102";
+    $font-Flaticon-ux-design: "\f103";
+    $font-Flaticon-web-design: "\f104";
+    $font-Flaticon-idea: "\f105";
+    $font-Flaticon-innovation: "\f106";

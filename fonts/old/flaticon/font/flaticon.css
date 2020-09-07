@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 07/09/2020 20:08
+  	Creation date: 20/03/2019 02:18
   	*/
 
 @font-face {
@@ -30,11 +30,10 @@ font-style: normal;
 margin-left: 20px;
 }
 
-.flaticon-earth:before { content: "\f100"; }
-.flaticon-book:before { content: "\f101"; }
-.flaticon-books-stack-of-three:before { content: "\f102"; }
-.flaticon-clipboard:before { content: "\f103"; }
-.flaticon-motherboard:before { content: "\f104"; }
-.flaticon-picture:before { content: "\f105"; }
-.flaticon-flasks:before { content: "\f106"; }
-.flaticon-hydro-power:before { content: "\f107"; }
+.flaticon-ideas:before { content: "\f100"; }
+.flaticon-flasks:before { content: "\f101"; }
+.flaticon-analysis:before { content: "\f102"; }
+.flaticon-ux-design:before { content: "\f103"; }
+.flaticon-web-design:before { content: "\f104"; }
+.flaticon-idea:before { content: "\f105"; }
+.flaticon-innovation:before { content: "\f106"; }
